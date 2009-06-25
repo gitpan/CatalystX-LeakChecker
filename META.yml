@@ -18,9 +18,9 @@ requires:
   MooseX::Types: 0
   PadWalker: 1
   Task::Weaken: 0
-  Test::More: 0
+  Test::More: 0.88
   Text::SimpleTable: 0
   aliased: 0
   namespace::autoclean: 0
   namespace::clean: 0.05
-version: 0.01
+version: 0.02
