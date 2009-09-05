@@ -2,7 +2,7 @@
 abstract: 'Debug memory leaks in Catalyst applications'
 author:
   - 'Florian Ragwitz <rafl@debian.org>'
-generated_by: 'Dist::Zilla::Plugin::MetaYAML version 1.091610'
+generated_by: 'Dist::Zilla::Plugin::MetaYAML version 1.092450'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -11,16 +11,14 @@ name: CatalystX-LeakChecker
 requires:
   B::Deparse: 0
   Catalyst: 5.8
-  Data::Visitor::Callback: 0
+  Devel::Cycle: 1.11
   FindBin: 0
   Moose: 0
   MooseX::AttributeHelpers: 0
   MooseX::Types: 0
-  PadWalker: 1
   Task::Weaken: 0
   Test::More: 0.88
   Text::SimpleTable: 0
-  aliased: 0
   namespace::autoclean: 0
   namespace::clean: 0.05
-version: 0.02
+version: 0.03
