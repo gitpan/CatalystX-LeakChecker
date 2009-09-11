@@ -1,5 +1,5 @@
 package CatalystX::LeakChecker;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 # ABSTRACT: Debug memory leaks in Catalyst applications
 
@@ -92,7 +92,7 @@ CatalystX::LeakChecker - Debug memory leaks in Catalyst applications
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 

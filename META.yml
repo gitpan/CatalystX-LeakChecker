@@ -16,9 +16,10 @@ requires:
   Moose: 0
   MooseX::AttributeHelpers: 0
   MooseX::Types: 0
+  PadWalker: 0
   Task::Weaken: 0
   Test::More: 0.88
   Text::SimpleTable: 0
   namespace::autoclean: 0
   namespace::clean: 0.05
-version: 0.03
+version: 0.04
