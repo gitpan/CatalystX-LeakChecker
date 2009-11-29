@@ -2,18 +2,20 @@
 use strict;
 use warnings;
 
+
+
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
   DISTNAME  => 'CatalystX-LeakChecker',
   NAME      => 'CatalystX::LeakChecker',
-  AUTHOR    => 'Florian\ Ragwitz\ \<rafl\@debian\.org\>',
-  ABSTRACT  => 'Debug\ memory\ leaks\ in\ Catalyst\ applications',
-  VERSION   => '0.04',
+  AUTHOR    => "Florian\ Ragwitz\ \<rafl\@debian\.org\>\,\ Tomas\ Doran\ \<bobtfish\@bobtfish\.net\>",
+  ABSTRACT  => "Debug\ memory\ leaks\ in\ Catalyst\ applications",
+  VERSION   => '0.05',
   EXE_FILES => [ qw() ],
   (eval { ExtUtils::MakeMaker->VERSION(6.31) } ? (LICENSE => 'perl') : ()),
   PREREQ_PM    => {
-    "PadWalker" => '0',
+    "PadWalker" => '1.8',
     "Devel::Cycle" => '1.11',
     "namespace::autoclean" => '0',
     "B::Deparse" => '0',
@@ -27,4 +29,6 @@ WriteMakefile(
     "Task::Weaken" => '0',
     "Moose" => '0',
   },
+  test => {TESTS => 't/*.t'}
 );
+

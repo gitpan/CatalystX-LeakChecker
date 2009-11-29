@@ -1,5 +1,6 @@
 package CatalystX::LeakChecker;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
+
 
 # ABSTRACT: Debug memory leaks in Catalyst applications
 
@@ -83,7 +84,6 @@ after finalize => sub {
 1;
 
 __END__
-
 =pod
 
 =head1 NAME
@@ -92,11 +92,14 @@ CatalystX::LeakChecker - Debug memory leaks in Catalyst applications
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
     package MyApp;
+our $VERSION = '0.05';
+
+
     use namespace::autoclean;
 
     extends 'Catalyst';
@@ -142,11 +145,10 @@ look like this:
 
 Override this method if you want leaks to be reported differently.
 
+=head1 AUTHORS
 
-
-=head1 AUTHOR
-
-  Florian Ragwitz <rafl@debian.org>
+Florian Ragwitz <rafl@debian.org>
+Tomas Doran <bobtfish@bobtfish.net>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -155,6 +157,5 @@ This software is copyright (c) 2009 by Florian Ragwitz.
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
-=cut 
-
+=cut
 

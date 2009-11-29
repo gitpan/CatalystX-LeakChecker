@@ -2,7 +2,8 @@
 abstract: 'Debug memory leaks in Catalyst applications'
 author:
   - 'Florian Ragwitz <rafl@debian.org>'
-generated_by: 'Dist::Zilla::Plugin::MetaYAML version 1.092450'
+  - 'Tomas Doran <bobtfish@bobtfish.net>'
+generated_by: 'Dist::Zilla version 1.093250'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,10 +17,10 @@ requires:
   Moose: 0
   MooseX::AttributeHelpers: 0
   MooseX::Types: 0
-  PadWalker: 0
+  PadWalker: 1.8
   Task::Weaken: 0
   Test::More: 0.88
   Text::SimpleTable: 0
   namespace::autoclean: 0
   namespace::clean: 0.05
-version: 0.04
+version: 0.05
