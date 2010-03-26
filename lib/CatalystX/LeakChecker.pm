@@ -1,7 +1,5 @@
 package CatalystX::LeakChecker;
-our $VERSION = '0.05';
-
-
+our $VERSION = '0.06';
 # ABSTRACT: Debug memory leaks in Catalyst applications
 
 use Moose::Role;
@@ -92,14 +90,11 @@ CatalystX::LeakChecker - Debug memory leaks in Catalyst applications
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
     package MyApp;
-our $VERSION = '0.05';
-
-
     use namespace::autoclean;
 
     extends 'Catalyst';
@@ -152,7 +147,7 @@ Tomas Doran <bobtfish@bobtfish.net>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2009 by Florian Ragwitz.
+This software is copyright (c) 2010 by Florian Ragwitz.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
